@@ -1,5 +1,5 @@
-CREATE DATABASE TP1
-USE TP1
+CREATE DATABASE TP3
+USE TP3
 
 --------------------------------------------------------------- creation des tables 
 CREATE TABLE IF NOT EXISTS personne (
