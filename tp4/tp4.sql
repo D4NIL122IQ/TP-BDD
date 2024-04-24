@@ -47,12 +47,12 @@ WHERE personne.idPersonne = jouer.idActeur
 
 --------------------------------- 10 
 SELECT DISTINCT personne.nom , personne.prenom 
-FROM personne, jouer, cinema, projection , film
+FROM personne, jouer, cinema, projection 
 WHERE personne.idPersonne= jouer.idActeur 
     AND jouer.idFilm = projection.idFilm 
     AND projection.idCinema = cinema.idCinema 
     AND cinema.nom = 'Le Fontenelle' 
-    AND film.annee >= 2000
+    AND projection.date >= 2000
 
 --------------------------------- 11
 SELECT film.titre
